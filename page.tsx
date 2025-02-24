@@ -88,7 +88,7 @@ export default function Home() {
         </div>
       </div>
 
-      <section className="container mx-auto px-4 py-20">
+      <section className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-2 gap-8">
           <div className="border rounded-lg p-8 space-y-6">
             <p className="text-gray-800">
@@ -161,7 +161,7 @@ export default function Home() {
       </section>
 
       {/* New email sign-up section */}
-      <section className="container mx-auto px-4 pb-20">
+      <section className="container mx-auto px-4 pb-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 border rounded-lg p-8 bg-gray-50">
           <div className="md:w-1/2">
             <h2 className="text-2xl md:text-3xl font-bold mb-2 text-gray-900">Why pay full price?</h2>
@@ -187,7 +187,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="py-16 text-center">
+      <footer className="py-8 text-center">
         <div className="mb-8">
           <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#00A8E8]/10">
             <Plane className="h-8 w-8 text-[#00A8E8]" />

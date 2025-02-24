@@ -88,7 +88,11 @@ const config: Config = {
   		animation: {
   			'accordion-down': 'accordion-down 0.2s ease-out',
   			'accordion-up': 'accordion-up 0.2s ease-out'
-  		}
+  		},
+  		fontFamily: {
+  			'poppins': ['Poppins', 'sans-serif'],
+  			'league-spartan': ['League Spartan', 'sans-serif'],
+  		},
   	}
   },
   plugins: [require("tailwindcss-animate")],
