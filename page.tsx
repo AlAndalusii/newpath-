@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import { Plane, Check } from "lucide-react"
+import Footer from "@/components/Footer"
 
 export default function Home() {
   const [isSubscribed, setIsSubscribed] = useState(false)
@@ -161,7 +162,7 @@ export default function Home() {
       </section>
 
       {/* New email sign-up section */}
-      <section className="container mx-auto px-4 pb-8">
+      <section className="container mx-auto px-4 pb-2">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 border rounded-lg p-8 bg-gray-50">
           <div className="md:w-1/2">
             <h2 className="text-2xl md:text-3xl font-bold mb-2 text-gray-900">Why pay full price?</h2>
@@ -187,19 +188,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="py-8 text-center">
-        <div className="mb-8">
-          <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#00A8E8]/10">
-            <Plane className="h-8 w-8 text-[#00A8E8]" />
-          </div>
-        </div>
-        <div className="text-base text-gray-600">
-          <p className="mb-2">© 2024 BestFlightAlerts</p>
-          <Link href="/privacy" className="text-[#00A8E8] hover:underline">
-            Privacy Policy
-          </Link>
-        </div>
-      </footer>
+      <Footer />
     </main>
   )
 }
