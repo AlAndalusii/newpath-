@@ -116,18 +116,18 @@ export default function Home() {
               <h2 className="text-2xl font-semibold mb-6">Best articles to start with:</h2>
               <ul className="space-y-4">
                 <li>
-                  <Link href="#" className="text-[#00A8E8] hover:underline">
+                  <Link href="/articles/ultimate-guide-mistake-fares" className="text-[#00A8E8] hover:underline">
                     Ultimate Guide to Finding Mistake Fares
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-[#00A8E8] hover:underline">
+                  <Link href="/articles/europe-247-round-trip" className="text-[#00A8E8] hover:underline">
                     How I Flew to Europe for $247 Round Trip
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-[#00A8E8] hover:underline">
-                    Mastering Credit Card Travel Rewards
+                  <Link href="/articles/cruise-age-restrictions" className="text-[#00A8E8] hover:underline">
+                    New Cruise Age Restrictions in 2025
                   </Link>
                 </li>
               </ul>

@@ -16,9 +16,9 @@ export default function Articles() {
       slug: "europe-247-round-trip",
     },
     {
-      title: "Mastering Credit Card Travel Rewards",
-      description: "Maximize your travel rewards and learn how to earn free flights with strategic credit card usage.",
-      slug: "mastering-travel-rewards",
+      title: "New Cruise Age Restrictions in 2025",
+      description: "How Carnival & Royal Caribbean are changing travel for young passengers with stricter age policies.",
+      slug: "cruise-age-restrictions",
     },
   ]
 
