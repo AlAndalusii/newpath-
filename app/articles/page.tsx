@@ -6,10 +6,20 @@ import Footer from '@/components/Footer'
 export default function Articles() {
   const featuredArticles = [
     {
+      title: "✈️ Near Miss at Chicago Midway Airport Involving Southwest Airlines",
+      description: "A Southwest Airlines flight narrowly avoided a runway collision at Chicago Midway Airport. Learn what happened and why it matters for Chicago travelers.",
+      slug: "southwest-near-miss",
+    },
+    {
       title: "🚢 New Cruise Age Restrictions in 2025",
       description: "How Carnival & Royal Caribbean are changing travel for young passengers with stricter age policies.",
       slug: "cruise-age-restrictions",
     },
+    {
+      title: "How I Flew to Europe for $247 Round Trip",
+      description: "A detailed case study of scoring an amazing deal on a round-trip flight to Europe.",
+      slug: "europe-247-round-trip",
+    }
   ]
 
   return (

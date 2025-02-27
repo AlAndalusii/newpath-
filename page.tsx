@@ -116,13 +116,8 @@ export default function Home() {
               <h2 className="text-2xl font-semibold mb-6">Best articles to start with:</h2>
               <ul className="space-y-4">
                 <li>
-                  <Link href="/articles/ultimate-guide-mistake-fares" className="text-[#00A8E8] hover:underline">
-                    Ultimate Guide to Finding Mistake Fares
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/articles/europe-247-round-trip" className="text-[#00A8E8] hover:underline">
-                    How I Flew to Europe for $247 Round Trip
+                  <Link href="/articles/southwest-near-miss" className="text-[#00A8E8] hover:underline">
+                    Near Miss at Chicago Midway Airport
                   </Link>
                 </li>
                 <li>
@@ -189,12 +184,19 @@ export default function Home() {
 
       <footer className="py-8 text-center">
         <div className="mb-8">
-          <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#00A8E8]/10">
-            <Plane className="h-8 w-8 text-[#00A8E8]" />
+          <div className="inline-flex items-center gap-2">
+            <div className="flex items-center bg-[#00A8E8] rounded-lg p-1">
+              <Plane className="h-5 w-5 text-white" />
+            </div>
+            <span className="text-lg font-bold tracking-tight">
+              <span className="text-[#00A8E8]">Best</span>
+              <span className="text-gray-800">Flight</span>
+              <span className="text-[#00A8E8]">Alerts</span>
+            </span>
           </div>
         </div>
         <div className="text-base text-gray-600">
-          <p className="mb-2">© 2024 BestFlightAlerts</p>
+          <p className="mb-2">© 2028 BestFlightAlerts</p>
           <Link href="/privacy" className="text-[#00A8E8] hover:underline">
             Privacy Policy
           </Link>
