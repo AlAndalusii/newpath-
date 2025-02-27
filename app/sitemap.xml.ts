@@ -1,9 +1,12 @@
 // app/sitemap.xml.ts
 
-import { MetadataRoute } from 'next'
+import { MetadataRoute } from 'next';
+
+export const dynamic = 'force-dynamic';
+export const runtime = 'edge';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://bestflightalerts.com'
+  const baseUrl = 'https://bestflightalerts.com';
 
   return [
     {
@@ -16,6 +19,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}/articles`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/articles/cruise-age-restrictions`,
+      lastModified: new Date('2025-02-24'),
+      changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
@@ -42,5 +51,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'yearly',
       priority: 0.3,
     },
-  ]
+  ];
 }

@@ -3,7 +3,7 @@ import Navigation from '@/components/Navigation'
 import EmailSignup from '@/components/EmailSignup'
 import Footer from '@/components/Footer'
 
-export default function CruiseAgeRestrictions() {
+export default function CruiseArticle() {
   return (
     <div className="min-h-screen bg-white font-poppins flex flex-col">
       <Navigation />
@@ -27,10 +27,19 @@ export default function CruiseAgeRestrictions() {
             <p className="mt-4">For Chicago-based travelers looking for <strong>affordable getaway options</strong>, these changes could reshape their cruise plans.</p>
             
             <p className="mt-4">Here's everything you need to know about <strong>the new age restrictions, why they were implemented, and how they will affect future bookings</strong>.</p>
+
+            {/* Add the image here */}
+            <div className="my-8">
+              <img 
+                src="/images/fernando-jorge-Q2B08QyXKC4-unsplash.jpg"
+                alt="Cruise Ship"
+                className="w-full h-auto rounded-lg object-cover"
+              />
+            </div>
             
-            <h2 className="text-2xl font-bold mt-8 mb-4">📌 The New Cruise Age Restrictions: What’s Changing?</h2>
+            <h2 className="text-2xl font-bold mt-8 mb-4">📌 The New Cruise Age Restrictions: What's Changing?</h2>
             
-            <h3 className="text-xl font-bold mt-6 mb-3">🚨 Carnival Cruise Line’s Updated Age Policy (2024)</h3>
+            <h3 className="text-xl font-bold mt-6 mb-3">🚨 Carnival Cruise Line's Updated Age Policy (2024)</h3>
             
             <ul className="list-disc pl-6 space-y-2">
               <li>🔹 <strong>New Rule:</strong> As of <strong>February 1, 2024</strong>, passengers under <strong>21 years old</strong> <strong>cannot</strong> book a Carnival cruise alone.</li>
@@ -38,7 +47,7 @@ export default function CruiseAgeRestrictions() {
               <li>🔹 <strong>Prior Rule:</strong> Previously, <strong>18-year-olds</strong> could book cabins independently.</li>
             </ul>
             
-            <h3 className="text-xl font-bold mt-6 mb-3">🚨 Royal Caribbean’s Policy (Existing)</h3>
+            <h3 className="text-xl font-bold mt-6 mb-3">🚨 Royal Caribbean's Policy (Existing)</h3>
             
             <ul className="list-disc pl-6 space-y-2">
               <li>🔹 Requires passengers <strong>under 21</strong> to be accompanied by a guardian aged <strong>at least 21</strong> (for North American sailings).</li>
@@ -54,7 +63,7 @@ export default function CruiseAgeRestrictions() {
             
             <h2 className="text-2xl font-bold mt-8 mb-4">💡 Why Are Cruise Lines Enforcing Stricter Age Restrictions?</h2>
             
-            <p>These updated age policies aren’t random—they align with industry trends and address safety, liability, and evolving travel demographics.</p>
+            <p>These updated age policies aren't random—they align with industry trends and address safety, liability, and evolving travel demographics.</p>
             
             <h3 className="text-xl font-bold mt-6 mb-3">🛑 1. Safety & Supervision Concerns</h3>
             
@@ -82,7 +91,7 @@ export default function CruiseAgeRestrictions() {
             
             <p>Families with older teens (18-20) must adjust their plans, ensuring an adult 25+ is included in the booking.</p>
             
-            <h2 className="text-2xl font-bold mt-8 mb-4">📊 The Travel Industry’s Response & Future Outlook</h2>
+            <h2 className="text-2xl font-bold mt-8 mb-4">📊 The Travel Industry's Response & Future Outlook</h2>
             
             <p>With the cruise industry rebounding in 2025, expect more changes in:</p>
             <ul className="list-disc pl-6 space-y-2">
@@ -98,8 +107,101 @@ export default function CruiseAgeRestrictions() {
             <p>📩 Sign up today and never miss a deal!</p>
           </div>
 
-          <div className="max-w-3xl mx-auto">
-            <EmailSignup />
+          {/* Email Signup Section */}
+          <div className="my-12 p-8 bg-gray-50 rounded-lg border">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+              <div className="md:w-1/2">
+                <h2 className="text-2xl md:text-3xl font-bold mb-2 text-gray-900">Never Miss a Deal!</h2>
+                <p className="text-base md:text-lg text-gray-600">
+                  Get instant alerts for flight and cruise deals from Chicago. Join our free service!
+                </p>
+              </div>
+              <div className="md:w-1/2 w-full max-w-lg">
+                <iframe
+                  src="https://embeds.beehiiv.com/30ad47ac-cfd0-4c8a-b68a-489fa999d343?slim=true"
+                  data-test-id="beehiiv-embed"
+                  height="52"
+                  width="100%"
+                  frameBorder="0"
+                  scrolling="no"
+                  style={{
+                    margin: 0,
+                    borderRadius: "6px",
+                    backgroundColor: "transparent",
+                  }}
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Comment Section */}
+          <div className="my-12">
+            <h2 className="text-2xl font-bold mb-8">Leave a Reply</h2>
+            <p className="text-gray-600 mb-6">Your email address will not be published. Required fields are marked *</p>
+            
+            <form className="space-y-6">
+              <div>
+                <label htmlFor="comment" className="block text-sm font-medium text-gray-700 mb-2">
+                  Comment *
+                </label>
+                <textarea
+                  id="comment"
+                  name="comment"
+                  rows={6}
+                  className="block w-full rounded-lg border border-gray-300 shadow-sm focus:border-[#00A8E8] focus:ring-[#00A8E8] sm:text-sm p-3"
+                  required
+                />
+              </div>
+
+              <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+                <div>
+                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                    Name *
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    className="block w-full rounded-lg border border-gray-300 shadow-sm focus:border-[#00A8E8] focus:ring-[#00A8E8] sm:text-sm p-3"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                    Email *
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    className="block w-full rounded-lg border border-gray-300 shadow-sm focus:border-[#00A8E8] focus:ring-[#00A8E8] sm:text-sm p-3"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div className="flex items-center">
+                <input
+                  id="save-info"
+                  name="save-info"
+                  type="checkbox"
+                  className="h-4 w-4 rounded border-gray-300 text-[#00A8E8] focus:ring-[#00A8E8]"
+                />
+                <label htmlFor="save-info" className="ml-2 block text-sm text-gray-700">
+                  Save my information in this browser for the next time I comment
+                </label>
+              </div>
+
+              <div>
+                <button
+                  type="submit"
+                  className="inline-flex justify-center rounded-lg border border-transparent bg-[#00A8E8] px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-[#0096d1] focus:outline-none focus:ring-2 focus:ring-[#00A8E8] focus:ring-offset-2"
+                >
+                  Post Comment
+                </button>
+              </div>
+            </form>
           </div>
         </article>
       </main>

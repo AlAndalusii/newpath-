@@ -6,17 +6,7 @@ import Footer from '@/components/Footer'
 export default function Articles() {
   const featuredArticles = [
     {
-      title: "Ultimate Guide to Finding Mistake Fares",
-      description: "Learn the secrets to finding and booking airline pricing errors for incredible savings on flights.",
-      slug: "ultimate-guide-mistake-fares",
-    },
-    {
-      title: "How I Flew to Europe for $247 Round Trip",
-      description: "A detailed case study of scoring an amazing deal on a round-trip flight to Europe.",
-      slug: "europe-247-round-trip",
-    },
-    {
-      title: "New Cruise Age Restrictions in 2025",
+      title: "🚢 New Cruise Age Restrictions in 2025",
       description: "How Carnival & Royal Caribbean are changing travel for young passengers with stricter age policies.",
       slug: "cruise-age-restrictions",
     },
@@ -37,7 +27,7 @@ export default function Articles() {
             </p>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mb-4">
+          <div className="grid gap-6 md:grid-cols-1 lg:grid-cols-1 mb-4">
             {featuredArticles.map((article) => (
               <div
                 key={article.slug}
