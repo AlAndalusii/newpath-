@@ -113,16 +113,16 @@ export default function Home() {
 
           <div className="border rounded-lg p-8 space-y-8">
             <div>
-              <h2 className="text-2xl font-semibold mb-6">Best articles to start with:</h2>
+              <h2 className="text-2xl font-bold mb-6">Best articles to start with:</h2>
               <ul className="space-y-4">
                 <li>
                   <Link href="/articles/southwest-near-miss" className="text-[#00A8E8] hover:underline">
-                    Near Miss at Chicago Midway Airport
+                    When Is the Best Time to Book a Flight?
                   </Link>
                 </li>
                 <li>
-                  <Link href="/articles/cruise-age-restrictions" className="text-[#00A8E8] hover:underline">
-                    New Cruise Age Restrictions in 2025
+                  <Link href="/articles/caribbean-direct-flights" className="text-[#00A8E8] hover:underline">
+                    Direct Flights from Chicago to the Caribbean
                   </Link>
                 </li>
               </ul>

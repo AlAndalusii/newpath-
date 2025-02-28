@@ -1,7 +1,12 @@
+import { Palmtree } from 'lucide-react'
+
 export default function EmailSignup() {
   return (
     <div className="bg-white rounded-lg shadow-sm p-8 my-12">
-      <h2 className="text-3xl font-bold mb-4 font-league-spartan">Why pay full price?</h2>
+      <div className="flex items-center gap-2 mb-4">
+        <Palmtree className="h-6 w-6 text-[#00A8E8]" />
+        <h2 className="text-3xl font-bold font-league-spartan">Why pay full price?</h2>
+      </div>
       <p className="text-gray-600 text-lg mb-6">
         Get instant alerts for flight deals to anywhere in the world. Join our free service!
       </p>

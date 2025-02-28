@@ -6,12 +6,12 @@ import Footer from '@/components/Footer'
 export default function Articles() {
   const featuredArticles = [
     {
-      title: "✈️ Near Miss at Chicago Midway Airport Involving Southwest Airlines",
-      description: "A Southwest Airlines flight narrowly avoided a runway collision at Chicago Midway Airport. Learn what happened and why it matters for Chicago travelers.",
+      title: "When Is the Best Time to Book a Flight?",
+      description: "The ultimate guide to scoring cheap airfare and finding the best deals on domestic and international flights.",
       slug: "southwest-near-miss",
     },
     {
-      title: "🚢 New Cruise Age Restrictions in 2025",
+      title: "New Cruise Age Restrictions in 2025",
       description: "How Carnival & Royal Caribbean are changing travel for young passengers with stricter age policies.",
       slug: "cruise-age-restrictions",
     },
@@ -19,6 +19,11 @@ export default function Articles() {
       title: "How I Flew to Europe for $247 Round Trip",
       description: "A detailed case study of scoring an amazing deal on a round-trip flight to Europe.",
       slug: "europe-247-round-trip",
+    },
+    {
+      title: "Direct Flights from Chicago to the Caribbean",
+      description: "Find the best nonstop flights from Chicago to Caribbean destinations, including detailed routes and pricing from United, American, Southwest, and Frontier Airlines.",
+      slug: "caribbean-direct-flights"
     }
   ]
 
@@ -37,24 +42,14 @@ export default function Articles() {
             </p>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-1 lg:grid-cols-1 mb-4">
+          <div className="grid gap-6 mb-12">
             {featuredArticles.map((article) => (
-              <div
-                key={article.slug}
-                className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
-              >
-                <Link href={`/articles/${article.slug}`}>
-                  <div className="p-6">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2 font-league-spartan">
-                      {article.title}
-                    </h3>
-                    <p className="text-gray-600">
-                      {article.description}
-                    </p>
-                    <div className="mt-4 text-[#00A8E8] font-medium">
-                      Read more →
-                    </div>
-                  </div>
+              <div key={article.slug} className="bg-white rounded-lg border p-6 hover:shadow-md transition-shadow">
+                <Link href={`/articles/${article.slug}`} className="block">
+                  <h2 className="text-xl font-semibold text-gray-900 mb-2 hover:text-[#00A8E8]">
+                    {article.title}
+                  </h2>
+                  <p className="text-gray-600">{article.description}</p>
                 </Link>
               </div>
             ))}

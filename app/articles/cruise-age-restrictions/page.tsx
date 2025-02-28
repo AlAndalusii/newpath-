@@ -107,33 +107,6 @@ export default function CruiseArticle() {
             <p>📩 Sign up today and never miss a deal!</p>
           </div>
 
-          {/* Email Signup Section */}
-          <div className="my-12 p-8 bg-gray-50 rounded-lg border">
-            <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-              <div className="md:w-1/2">
-                <h2 className="text-2xl md:text-3xl font-bold mb-2 text-gray-900">Never Miss a Deal!</h2>
-                <p className="text-base md:text-lg text-gray-600">
-                  Get instant alerts for flight and cruise deals from Chicago. Join our free service!
-                </p>
-              </div>
-              <div className="md:w-1/2 w-full max-w-lg">
-                <iframe
-                  src="https://embeds.beehiiv.com/30ad47ac-cfd0-4c8a-b68a-489fa999d343?slim=true"
-                  data-test-id="beehiiv-embed"
-                  height="52"
-                  width="100%"
-                  frameBorder="0"
-                  scrolling="no"
-                  style={{
-                    margin: 0,
-                    borderRadius: "6px",
-                    backgroundColor: "transparent",
-                  }}
-                />
-              </div>
-            </div>
-          </div>
-
           {/* Comment Section */}
           <div className="my-12">
             <h2 className="text-2xl font-bold mb-8">Leave a Reply</h2>
@@ -203,6 +176,9 @@ export default function CruiseArticle() {
               </div>
             </form>
           </div>
+
+          {/* Email Signup */}
+          <EmailSignup />
         </article>
       </main>
 
