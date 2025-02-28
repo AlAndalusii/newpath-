@@ -42,14 +42,17 @@ export default function Articles() {
             </p>
           </div>
 
-          <div className="grid gap-6 mb-12">
+          <div className="space-y-8 mb-12">
             {featuredArticles.map((article) => (
-              <div key={article.slug} className="bg-white rounded-lg border p-6 hover:shadow-md transition-shadow">
-                <Link href={`/articles/${article.slug}`} className="block">
-                  <h2 className="text-xl font-semibold text-gray-900 mb-2 hover:text-[#00A8E8]">
+              <div key={article.slug} className="border-b pb-8 last:border-b-0">
+                <h2 className="text-2xl font-semibold mb-2">
+                  <Link href={`/articles/${article.slug}`} className="text-gray-900 hover:text-[#00A8E8]">
                     {article.title}
-                  </h2>
-                  <p className="text-gray-600">{article.description}</p>
+                  </Link>
+                </h2>
+                <p className="text-gray-600 mb-4">{article.description}</p>
+                <Link href={`/articles/${article.slug}`} className="text-[#00A8E8] hover:underline">
+                  Read more →
                 </Link>
               </div>
             ))}

@@ -207,13 +207,7 @@ export default function CaribbeanDirectFlights() {
           </div>
 
           {/* Email Signup */}
-          <div className="bg-white rounded-lg shadow-sm p-8 my-12">
-            <h2 className="text-3xl font-bold mb-4 font-league-spartan">Why pay full price?</h2>
-            <p className="text-gray-600 text-lg mb-6">
-              Get instant alerts for flight deals to anywhere in the world. Join our free service!
-            </p>
-            <EmailSignup />
-          </div>
+          <EmailSignup />
         </article>
       </main>
 
