@@ -40,8 +40,8 @@ export default function SouthwestNearMiss() {
             {/* Add the image */}
             <div className="my-8">
               <img 
-                src="/images/dubai-marina.jpg"
-                alt="Modern city waterfront with skyscrapers and a traditional boat"
+                src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+                alt="Commercial airplane flying through clouds during sunset"
                 className="w-full h-[400px] rounded-lg object-cover"
               />
             </div>
@@ -118,8 +118,8 @@ export default function SouthwestNearMiss() {
             <p className="mt-4">🚨 <strong>Biggest myth:</strong> There is no single "cheapest day" every time! Prices fluctuate based on <strong>demand, seasonality, and available fare classes</strong>.</p>
           </div>
 
-          {/* Comment Section - Moved above email signup */}
-          <div className="my-12">
+          {/* Comment Section */}
+          <div className="mb-8">
             <h2 className="text-2xl font-bold mb-8">Leave a Reply</h2>
             <p className="text-gray-600 mb-6">Your email address will not be published. Required fields are marked *</p>
             
@@ -188,8 +188,10 @@ export default function SouthwestNearMiss() {
             </form>
           </div>
 
-          {/* Email Signup moved below comment section */}
-          <EmailSignup />
+          {/* Email Signup */}
+          <div className="mb-8">
+            <EmailSignup />
+          </div>
         </article>
       </main>
 

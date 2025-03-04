@@ -6,6 +6,11 @@ import Footer from '@/components/Footer'
 export default function Articles() {
   const featuredArticles = [
     {
+      title: "Find Cheap Direct Flights from Chicago to Mexico City!",
+      description: "Discover the best deals on non-stop flights from Chicago to Mexico City, plus tips for saving money and making the most of your trip.",
+      slug: "chicago-mexico-city-flights",
+    },
+    {
       title: "When Is the Best Time to Book a Flight?",
       description: "The ultimate guide to scoring cheap airfare and finding the best deals on domestic and international flights.",
       slug: "southwest-near-miss",
