@@ -6,6 +6,11 @@ import Footer from '@/components/Footer'
 export default function Articles() {
   const featuredArticles = [
     {
+      title: "Cheap Flights from Chicago to Atlanta – Your Ultimate Guide!",
+      description: "Find the best deals on flights from Chicago to Atlanta with our comprehensive guide to airlines, pricing, and travel tips.",
+      slug: "chicago-atlanta-flights",
+    },
+    {
       title: "Find Cheap Direct Flights from Chicago to Mexico City!",
       description: "Discover the best deals on non-stop flights from Chicago to Mexico City, plus tips for saving money and making the most of your trip.",
       slug: "chicago-mexico-city-flights",

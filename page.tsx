@@ -125,6 +125,11 @@ export default function Home() {
                     Direct Flights from Chicago to the Caribbean
                   </Link>
                 </li>
+                <li>
+                  <Link href="/articles/chicago-atlanta-flights" className="text-[#00A8E8] hover:underline">
+                    Cheap Flights from Chicago to Atlanta
+                  </Link>
+                </li>
               </ul>
             </div>
 

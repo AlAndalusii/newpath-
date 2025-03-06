@@ -11,72 +11,58 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     {
-      url: `${baseUrl}`,
-      lastModified: currentDate,
+      url: baseUrl,
+      lastModified: new Date('2025-03-04'),
       changeFrequency: 'daily',
       priority: 1,
     },
     {
       url: `${baseUrl}/articles`,
-      lastModified: currentDate,
+      lastModified: new Date('2025-03-04'),
+      changeFrequency: 'daily',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/articles/chicago-atlanta-flights`,
+      lastModified: new Date('2025-03-04'),
       changeFrequency: 'weekly',
       priority: 0.8,
     },
-    // Current active articles
     {
       url: `${baseUrl}/articles/chicago-mexico-city-flights`,
       lastModified: new Date('2025-03-02'),
-      changeFrequency: 'monthly',
+      changeFrequency: 'weekly',
       priority: 0.8,
     },
     {
       url: `${baseUrl}/articles/southwest-near-miss`,
       lastModified: new Date('2025-02-28'),
-      changeFrequency: 'monthly',
+      changeFrequency: 'weekly',
       priority: 0.8,
     },
     {
       url: `${baseUrl}/articles/cruise-age-restrictions`,
-      lastModified: new Date('2025-02-24'),
-      changeFrequency: 'monthly',
-      priority: 0.8,
+      lastModified: new Date('2025-02-28'),
+      changeFrequency: 'weekly',
+      priority: 0.7,
     },
     {
       url: `${baseUrl}/articles/europe-247-round-trip`,
       lastModified: new Date('2025-02-25'),
       changeFrequency: 'monthly',
-      priority: 0.7,
+      priority: 0.6,
     },
     {
       url: `${baseUrl}/articles/caribbean-direct-flights`,
       lastModified: new Date('2025-02-28'),
-      changeFrequency: 'monthly',
+      changeFrequency: 'weekly',
       priority: 0.8,
-    },
-    // Older or placeholder articles
-    {
-      url: `${baseUrl}/articles/ultimate-guide-mistake-fares`,
-      lastModified: new Date('2025-02-24'),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/articles/mastering-travel-rewards`,
-      lastModified: new Date('2025-02-24'),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/articles/cruise-age-restrictions-2025`,
-      lastModified: new Date('2025-02-25'),
-      changeFrequency: 'monthly',
-      priority: 0.6,
     },
     {
       url: `${baseUrl}/privacy`,
-      lastModified: currentDate,
+      lastModified: new Date('2025-02-24'),
       changeFrequency: 'yearly',
-      priority: 0.3,
+      priority: 0.5,
     },
   ];
 }
