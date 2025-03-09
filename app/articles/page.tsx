@@ -6,6 +6,11 @@ import Footer from '@/components/Footer'
 export default function Articles() {
   const featuredArticles = [
     {
+      title: "Best Caribbean Islands with Direct Flights from Chicago",
+      description: "Discover the top Caribbean destinations you can reach directly from Chicago, including Punta Cana, Montego Bay, Nassau, San Juan, and Aruba.",
+      slug: "best-caribbean-islands",
+    },
+    {
       title: "Cheap Flights from Chicago to Atlanta – Your Ultimate Guide!",
       description: "Find the best deals on flights from Chicago to Atlanta with our comprehensive guide to airlines, pricing, and travel tips.",
       slug: "chicago-atlanta-flights",

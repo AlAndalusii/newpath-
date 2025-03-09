@@ -12,21 +12,27 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
       url: baseUrl,
-      lastModified: new Date('2025-03-04'),
+      lastModified: new Date('2025-03-05'),
       changeFrequency: 'daily',
       priority: 1,
     },
     {
       url: `${baseUrl}/articles`,
-      lastModified: new Date('2025-03-04'),
+      lastModified: new Date('2025-03-05'),
       changeFrequency: 'daily',
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/articles/chicago-atlanta-flights`,
-      lastModified: new Date('2025-03-04'),
+      url: `${baseUrl}/articles/best-caribbean-islands`,
+      lastModified: new Date('2025-03-05'),
       changeFrequency: 'weekly',
       priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/articles/chicago-atlanta-flights`,
+      lastModified: new Date('2025-03-04'),
+      changeFrequency: 'daily',
+      priority: 0.9,
     },
     {
       url: `${baseUrl}/articles/chicago-mexico-city-flights`,
